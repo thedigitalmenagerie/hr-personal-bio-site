@@ -1,22 +1,14 @@
-import profileImage from '../../assets/profileImage.png';
-
-const showResume = (array) => {
+const showResume = (resumeArray) => {
   document.querySelector('#logoContainer').innerHTML = '';
   document.querySelector('#contentContainer').innerHTML = '';
+  document.querySelector('#contentContainer').innerHTML = '<div id="resumeCardContainer"></div>';
 
-  array.forEach((item) => {
-    document.querySelector('#contentContainer').innerHTML += `<div class="card mb-3" id="resumeDetailsCard" style="max-width: 810px;">
-  <div class="row g-0">
-    <div class="col-md-4">
-      <img src="${profileImage}">
-    </div>
-    <hr>
-    <div class="col-md-8">
+  resumeArray.forEach((item) => {
+    document.querySelector('#resumeCardContainer').innerHTML += `<div class="card mb-3" id="resumeDetailsCard" style="max-width: 810px;">
       <div class="card-body">
         <p class="card-text"><strong>Role:</strong>${item.role}</p>
         <p class="card-text"><strong>Company:</strong>${item.company}</p>
         <p class="card-text"><strong>Dates:</strong>${item.dates}</p>
-        <p class="card-text"><strong>Length:</strong></p>
         <p class="card-text"><strong>Location:</strong>${item.location}</p>
       </div>
     </div>

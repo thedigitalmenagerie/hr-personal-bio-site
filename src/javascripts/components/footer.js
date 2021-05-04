@@ -17,7 +17,7 @@ const footer = () => {
       <a class="nav-link" id="githubImage" href="https://github.com/thedigitalmenagerie"><img src="${githubImage}"></a>
     </li>
     <li class="nav-item">
-      <a href="" class="btn btn-default btn-rounded mb-4" data-toggle="modal" data-target="#modalContactForm" id="iconImage" ><img src="${emailIcon}"></a>
+      <button href="" class="btn btn-default btn-rounded mb-4" data-toggle="modal" data-target="#modalContactForm" id="iconImage" ><img src="${emailIcon}"></button>
     </li>
   </ul>
 </div>
@@ -31,7 +31,7 @@ const footer = () => {
           <a class="nav-link active" id="facebookIcon" aria-current="page" href="#"><img src="${facebookIcon}"</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" id="twitterIcon" href="#"><img src="${twitterIcon}"></a>
+          <a class="nav-link" id="twitterIcon" href="https://twitter.com/dgtlmenagerie"><img src="${twitterIcon}"></a>
         </li>
         <li class="nav-item">
           <a class="nav-link" id="instagramIcon" href="#"><img src="${instagramIcon}"></a>
